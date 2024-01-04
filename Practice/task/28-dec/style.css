@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #08415c;
+    text-align: center;
+}
+button{
+    width: 50px;
+    padding: 10px 0;
+    margin: 5px 3px;
+   
+}
+button:hover,input:hover{
+    box-shadow: 0 0 6px #eee5e9;
+}
+input{
+    width: 212px;
+    margin: 5px 0;
+}

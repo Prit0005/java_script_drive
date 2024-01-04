@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider-img {
+    animation: pulse 2s infinite;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.slider-img img {
+    width: 100%; 
+}
+
+@keyframes pulse {
+    0% {
+        transform: rotate(360deg);
+    }
+}
