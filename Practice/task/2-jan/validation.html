@@ -86,10 +86,10 @@
         document.querySelectorAll(".input").forEach(input => {
             input.onblur = () => {
                 let errorMessage = input.parentNode.querySelector(".error-message");
-                if (input.value.trim() === "" && input.id !== 'Lname' && input.id !== 'age') {
+                if (input.value === "" && input.id !== 'Lname' && input.id !== 'age') {
 
                     if (!errorMessage) {
-                        const message = document.createElement("div");
+                        let message = document.createElement("div");
                         message.className = "error-message";
                         message.style.color = "red"
                         message.textContent = "Field cannot be blank";
