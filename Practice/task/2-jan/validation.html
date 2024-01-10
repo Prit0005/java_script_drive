@@ -69,6 +69,9 @@
                 <input class="input" type="email" name="Email" id="Email" placeholder="Enter your E-mail">
             </div>
             <div class="row">
+                <input type="tel" name="tel" id="tel" placeholder="Enter your number">
+            </div>
+            <div class="row">
                 <input class="input" type="password" name="password" id="pass" placeholder="Password">
             </div>
             <div class="row">
@@ -80,6 +83,8 @@
 
         </form>
     </div>
+
+
 
 
     <script>
@@ -102,10 +107,30 @@
                         errorMessage.remove();
                     }
                 }
-
             };
         });
+        document.getElementById("Email").addEventListener("keyup", function () {
+            let RegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9_\.\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+            const emailInp = document.getElementById("Email");
+            const alertMsg = document.querySelector(".alertmsg");
+
+            if (!RegEx.test(emailInp.value)) {
+                if (!alertMsg) {
+                    let b = document.createElement("div");
+                    b.className = "alertmsg";
+                    b.textContent = "Invalid Email Address";
+                    emailInp.parentNode.appendChild(b);
+                }
+            } else {
+                if (alertMsg) {
+                    alertMsg.parentNode.removeChild(alertMsg);
+                }
+            }
+        });
+
+
     </script>
+
 </body>
 
 </html>

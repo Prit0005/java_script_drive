@@ -129,7 +129,7 @@ hr {
     transition: exampleAnimation 2s ease-in-out infinite;
     user-select: none;
     animation: uniqueAnimation 3s infinite;
-    z-index: -9999;
+    z-index: -999;
 }
 @keyframes uniqueAnimation {
     0% {
