@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Document</title>
+    <link rel="stylesheet" href="./js.css">
+</head>
+
+<body>
+    <h1>Java Script</h1>
+    <p class="que">What is JS(Java Script)?</p>
+    <p>&#8680;JavaScript is a programming language that, together with HTML and CSS, is one of the core technologies of
+        the World Wide Web.</p>
+    <p>&#8680;JavaScript is client programming language that allows to implement complex featueres on webpage.</p>
+    <p>&#8680;World Wide 95% uses and more than 14Lac library</p>
+    <p>&#8680;JavaScript is a scripting language that enables you to create dynamically updating content, control
+        multimedia, animate images, and pretty much everything else.</p>
+    <ul>
+        <li class="highlight"><b>Types of JavaScript</b></li>
+        <li>
+            <p>You can use JavaScript in your webpage using script tag that is called <b>internal JavaScript.</b></p>
+        </li>
+        &#8627;<p>&lt;script&gt;</p>
+        <p>//JavaScript coding can be done inside this tag</p>
+        <p>&lt;/script&gt;</p>
+        <li>Also you can use separate file and link on your html file that is called <b>External JavaScript.</b></li>
+        &#8627;<p>&lt;script src="script.js"&gt;&lt;/script&gt;</p>
+    </ul>
+    <ul>
+        <li class="highlight"><b>Types of Comments</b></li>
+        <li><b>Single line comments-</b>You want to added single line commment ,start with "//"</li>
+        <li><b>Double line comments-</b>In your code you want to added multiple line comment ,start with "/*....*/"</li>
+    </ul>
+    <p class="que">Variable</p>
+    <p>&#8680; Variable is a one type of cointner that store the value.</p>
+    <p>&#8680; In JavaScript , Three type of Variable</p>
+    <ul>
+        <li>Var(Local Scope)</li>
+        <li>Let(Global Scope)</li>
+        <li>Const(Block Scope)</li>
+    </ul>
+    <p><b>Var-</b>In JavaScript ,most commenly used variable.It can be Redeclare and Reasseigned values.</p>
+    &#8627;<p>var a = 140; // variable a can be reassigned a new value and also redeclared</p>
+    <p><b>Let-</b>In JavaScript ,this variable only reassigned value and not Redeclare value.</p>
+    &#8627;<p>let a = 202; // variable a can't be redeclared but can be reassigned a new value.</p>
+    <p><b>Const-</b>In JavaScript ,this variable is not Redeclare and reassigne and this is a keyword.</p>
+    <p>You can also use in your code in one time.</p>
+    &#8627;<p>const a = 5; // variable a cannot be reassigned a new value or redeclared.</p>
+    <p class="que">Data type</p>
+    <p>&#8680;A data type in JavaScript which type of data store in your variable called data type.</p>
+    <p>&#8680;In JavaScript <strong>two</strong> type of data type</p>
+    <ul>
+        <li class="highlight">Primtive data type</li>
+        <li class="highlight">Non-Primtive data type</li>
+    </ul>
+    <p class="highlight">Primtive data type</p>
+    <p>&#8680; JavaScript predefined data type is also known as primtive data type.</p>
+    <p>&#8680; 7 type of primtive data type.</p>
+    <ul>
+        <li><strong>Number-</strong>Number data type in JavaScript hold the decimal value</li>
+        <p>let x = 250;</p>
+        <p>console.log(x);</p>
+        <li><strong>String-</strong>Sequence of character written in single or double quotes it called string.</li>
+        <p>let str ="Pritesh";</p>
+        <p>console.log(str);</p>
+        <li><strong>Undefined-</strong>Undefined means value is not defined or no assigned.</li>
+        <p>console.log(x);</p>
+        <li><strong>Boolean-</strong>Boolean return two values eithr true or false.</li>
+        <p>console.log(bool);</p>
+        <li><strong>BigInt-</strong>This variable holds number greater than <sub>2</sub>53-1 that means you perform
+            large operatin.</li>
+        <p>let x = null;</p>
+        <p>console.log(x);</p>
+        <li><strong>Symbol-</strong>This data type create always object wthich is always unique.</li>
+        <p>let sym = Symbol("Hello")</p>
+        <p>console.log(typeof(sym));</p>
+        <p>console.log(sym);</p>
+    </ul>
+    <p class="highlight">Non-Premtive data type</p>
+    <p>&#8680; data types that are derived from primitive data types of the JavaScript language are known as
+        non-primitive data types</p>
+    <ul>
+        <li><strong>Object-</strong>An JavaScript every entity have propertise and method,every thingis an object in
+            JavaScript.</li>
+        <p>// Create object</p>
+        <p>let obj = new Object();</p>
+        <p>// Create a user defined object</p>
+        <p>let mycar = new Car();</p>
+        <li><strong>Array-</strong>With help of array ,You can srtore the multiple value in single variable.</li>
+        <p>// Create Array</p>
+        <p>let arr = new Array(1, 2, 3);</p>
+    </ul>
+    <p class="highlight">Conditional statement</p>
+    <p>&#8680;In JavaScript conditional statement allows to execute block of code based on condition.</p>
+    <ul>
+        <li>if-statement</li>
+        <li>if-else-statement</li>
+        <li>else-if-statement</li>
+        <li>switch-statement</li>
+    </ul>
+    <p><strong>if-statement-</strong>When if condition true the associated code is executed.</p>
+    &#8627;<p>if ( condition ) {</p>
+    <p>//your code</p>
+    <p>}</p>
+    <p><strong>if-else-statement-</strong>In if-else statement first if condition is check ,if condition is true than
+        associat code execute or if condition is false else condition execute.</p>
+    &#8627;<p>if ( condition ) {</p>
+    <p>//your code</p>
+    <p>}</p>
+    <p>else {</p>
+    <p>//your code</p>
+    <p>}</p>
+    <p><strong>else-if-statement-</strong>The else if statement hold multiple condition.</p>
+    &#8627;<p>if ( 1st condition ) {</p>
+    <p>//your code</p>
+    <p>} else if (2nd condition) {</p>
+    <p> // ode for 2nd condition</p>
+    <p>} else {</p>
+    <p>// above all condition are false than execute</p>
+    <p>}</p>
+    <p><strong>switch-statement-</strong>When we use multiple if else condition your code is not redeable and more
+        complex so we can use switch case for multiple condtion and easily understandble.</p>
+    &#8627;<p>switch (expression) {</p>
+    <p> case value1:</p>
+    <p> statement1;</p>
+    <p> break;</p>
+    .......
+    <p> case valueN:</p>
+    <p> statementN;</p>
+    <p> break;</p>
+    <p> default:</p>
+    <p> statementDefault;</p>
+    <p>};</p>
+    <p class="highlight">Looping structure</p>
+    <p>&#8680;A looping structure is a way of repeating a block of code based on a condition.</p>
+    <ul>
+        <li>for(initialization;condition;increment/decrement)</li>
+        <li>while(condition)</li>
+        <li>arr.forEach(var)</li>
+        <li>for(let a in arr)</li>
+        <li>for(let a of arr)</li>
+        <li>do....while(consition)</li>
+    </ul>
+    <p><strong>for loop-</strong>for loop provides a concise way of writing the loop structure and for statement
+        consumes the initialization, condition, and increment/decrement in one line thereby providing a shorter</p>
+    &#8627;<p>for (initialization; testing condition; increment/decrement) {</p>
+    <p> //your code</p>
+    <p> }</p>
+    <p><strong>while loop-</strong>A while loop is a control flow statement that allows code to be executed repeatedly
+        based on a given Boolean condition.</p>
+    <p>this is a entry control loop</p>
+    &#8627;<p>while (boolean condition) {</p>
+    <p> loop statements...</p>
+    <p> }</p>
+    <p><strong>do while loop-</strong>This loop is same as a while loop but difference is the first execute statement
+        and after the condition check.</p>
+    <p>this is a exit control loop</p>
+    &#8627;<p>do {</p>
+    <p>Statements..</p>
+    <p> }while (condition);</p>
+</body>
+
+</html>

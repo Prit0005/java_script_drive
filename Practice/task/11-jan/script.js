@@ -4,7 +4,7 @@ let calculateAge = () => {
     // Get the input date value
     let dob = document.getElementById("date").value;
     
-    // Calculate the age
+    // Calculate the date
     let today = new Date();
     let birthDate = new Date(dob);
     let current = today - birthDate;

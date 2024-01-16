@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //creat array
+        let array=[10,20,-30,-40,50];
+        // create arrow function
+        let negnumber=()=>{
+            return array.filter(array =>array <=0)
+        }
+        //function call
+        negnumber(array);
+        //display
+        document.write("original array"+array);
+        document.write("</br>");
+        document.write("negative number:"+negnumber(array));
+    </script>
+</body>
+</html>

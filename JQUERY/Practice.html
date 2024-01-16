@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>Click me</button>
+    <div id="div">hello</div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        // practice
+
+        // $('button').click(function () {
+        //     alert("hello,How are you")
+        // });
+
+
+        // togle
+
+        // $('button').click(function () {
+        //     $('#div').toggle(1000); // add milisecond for smooyh effect
+        // })
+
+        //uses multiple events
+
+        $('div').on({
+            mouseenter:function(){
+                $(this).css('backgroundColor','red');
+            },
+            mouseleave:function(){
+                $(this).css('backgroundColor','green');
+            },
+            click:function(){
+                $(this).css('backgroundColor','yellow');
+            },
+        });
+    </script>
+</body>
+
+</html>
