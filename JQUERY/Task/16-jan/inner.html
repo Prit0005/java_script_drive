@@ -17,29 +17,39 @@
             margin: 5px;
             background: rgb(255, 140, 0);
         }
+
+        div>div {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            background: rgb(192, 155, 110);
+        }
     </style>
 </head>
 
 <body>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div>
+        <div></div>
+    </div>
+    <div>
+        <div></div>
+    </div>
+    <div>
+        <div></div>
+    </div>
+    <div>
+        <div></div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
-        a = 50;
-        b = 50;
-        // $("div").click(function () {
-
-        //     $(this).width(a);
-        //     $(this).height(b);
-        //     a -= 5;
-        //     b -= 5;
-        // })
-        $("div").click(function () {
+        a = 40;
+        b = 40;
+        $("div>div").click(function () {
             $(this).innerHeight(a);
-            a -= 5
+            $(this).innerWidth(b);
+            a -= 5;
+            b -= 5;
         });
     </script>
 </body>
