@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    </script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+    <span></span>
+    <button>Click here!!</button>
+
+    <script>
+        $(document).ready(function(){
+            $("button").on({
+            click: function () {
+                $("div").animate({ width: "200px", height: "200px"}, 500);
+            },
+            dblclick: function () {
+                $("#box").animate({
+                    width: "300px"
+                });
+                $("#box").animate({
+                    height: "300px"
+                });
+                $("#box").animate({
+                    width: "100px"
+                });
+                $("#box").animate({
+                    height: "100px"
+                });
+            }
+        });
+        });
+    </script>
+</body>
+
+</html>
