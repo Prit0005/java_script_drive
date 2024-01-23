@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="row">
+            <div class="col-20">
+                <div class="link">
+                    <a href="#" class="a tc">jQuery</a>
+                    <hr>
+                    <a href="#" class="b tc">CSS Using JQuery</a>
+                    <hr>
+                    <a href="#" class="c tc">slider with animation</a>
+                </div>
+            </div>
+            <div class="col-80">
+                <h1 class="tc">Module (JQuery Basic, Effects & Advanced) – 5 </h1>
+                <p class="title bounce">J-Query ASSIGMENT</p>
+                <div class="que1 dis">
+                    <div class="que">
+                        <h2>What is jQuery? </h2>
+                    </div>
+                    <div class="ans">
+                        <p>&#8608jQuery is a small, light-weight and fast JavaScript library</p>
+                        <p>&#8608It is cross-platform and supports different types of browsers. </p>
+                        <p>&#8608It is also referred as ?write less do more? because it takes a lot of common tasks that
+                            requires many lines of JavaScript code to accomplish, and binds them into methods that can
+                            be called with a single line of code whenever needed.
+                        </p>
+                        <p>&#8608It is also very useful to simplify a lot of the complicated things from JavaScript,
+                            like AJAX calls and DOM manipulation.</p>
+                        <p class="ex">Features</p>
+                        &#8627<ul>
+                            <li>HTML manipulation</li>
+                            <li>DOM manipulation</li>
+                            <li>CSS manipulation</li>
+                            <li>JSON Parsing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="que2  dis">
+                    <div class="que">
+                        <h2>How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery ,
+                            JQuery Animation? </h2>
+                    </div>
+                    <div class="ans">
+                        <p class="highlight">Apply CSS Using jQuery</p>
+                        <p>&#8608We can apply CSS using jQuery using the .css() method. . </p>
+                        <p class="ex">Example</p>
+                        &#8627<p>
+                        <p>&lt;div&gt; id="myElement">Pritesh&lt;/div&gt;</p>
+                        <br><br>
+                        <p>&ltscript&gt</p>
+                        <p>$("#myElement").css({</p>
+                        <p>"color": "blue"</p>
+                        <p> "font-size": "24px" });</p>
+                        <p>});</p>
+                        <p>&lt/script&gt</p>
+                        <br><br>
+                        <p class="highlight">Adding and Removing Classes in jQuery:</p>
+                        <p>&#8608You can use the addClass() and removeClass() methods to add and remove classes in
+                            jQuery: </p>
+                        <p class="ex">Example</p>
+                        &#8627<p>
+                        <p>&lt;style&gt;</p>
+                        <p> #myElement {</p>
+                        <p> color: red;</p>
+                        <p> font-weight: bold;}</p>
+                        <p>&lt;/style&gt;</p>
+                        <br><br>
+                        <p>&lt;div&gt; id="myElement">Pritesh&lt;/div&gt;</p>
+                        <br><br>
+                        <p>&ltscript&gt</p>
+                        <p> $('#myElement').addClass('highlight');</p>
+                        <p>setTimeout(function(){ $('#myParagraph').removeClass('highlight'); }, 2000);</p>
+                        <p>});</p>
+                        <p>&lt/script&gt</p>
+                        <br><br>
+                        <p class="highlight"> jQuery Animation</p>
+                        <p>&#8608jQuery provides various methods for creating animations. One common method is
+                            animate(). </p>
+                        <p class="ex">Syntax</p>
+                        <p>$("selector").animate({params}, speed, callback);</p>
+                        <p class="ex">Example</p>
+                        &#8627<p>
+                        <p>&lt;style&gt;</p>
+                        <p> #myElement {</p>
+                        <p> width: 100px;</p>
+                        <p> height: 100px;</p>
+                        <p> background-color: red;</p>
+                        <p> }</p>
+                        <p>&lt;/style&gt;</p>
+                        <br><br>
+                        <p>&lt;div&gt; id="myElement">&lt;/div&gt;</p>
+                        <br><br>
+                        <p>&ltscript&gt</p>
+                        <p> $('#myElement').animate({</p>
+                        <p> width: '200px',</p>
+                        <p> height: '200px', });</p>
+                        <p>backgroundColor: 'blue'</p>
+                        <p> }, 1000);</p>
+                        <p> });</p>
+                        <p>&lt/script&gt</p>
+                    </div>
+                </div>
+                <div class="que3  dis">
+                    <div class="que">
+                        <h2>How to create slider with animation? </h2>
+                    </div>
+                    <div class="ans">
+                     <table>
+                        <tr>
+                            <td>
+                              <img src="./slide.png" alt="">
+                            </td>
+                        </tr>
+                        <tr><iframe width="500px" height="300px" src="./slider.html" frameborder="2"></iframe></tr>
+                     </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script>
+        let col20 = document.querySelector(".col-20");
+        let aElements = col20.querySelectorAll("a");
+
+        aElements.forEach(a => {
+            a.onclick = () => {
+                let index = a.classList[0].charCodeAt(0) - 'a'.charCodeAt(0) + 1;
+                let targetQuestion = document.querySelector(`.que${index}`);
+
+
+                document.querySelectorAll('.dis').forEach(question => {
+                    question.style.display = 'none';
+                });
+
+
+                targetQuestion.style.display = "block";
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

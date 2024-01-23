@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .renderjson a {
+      text-decoration: none;
+    }
+
+    .renderjson .disclosure {
+      color: crimson;
+      font-size: 150%;
+    }
+
+    .renderjson .syntax {
+      color: grey;
+    }
+
+    .renderjson .string {
+      color: red;
+    }
+
+    .renderjson .number {
+      color: cyan;
+    }
+
+    .renderjson .boolean {
+      color: plum;
+    }
+
+    .renderjson .key {
+      color: lightblue;
+    }
+
+    .renderjson .keyword {
+      color: lightgoldenrodyellow;
+    }
+
+    .renderjson .object.syntax {
+      color: lightseagreen;
+    }
+
+    .renderjson .array.syntax {
+      color: lightsalmon;
+    }
+
+    #container {
+      text-shadow: none;
+      background: #303030;
+      padding: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container"></div>
+  <script>
+    var data = {
+      hello: [1, 2, 3, 4],
+      there: {
+        a: 1,
+        b: 2,
+        c: ["hello", null]
+      }
+    };
+
+    document.getElementById("container").appendChild(
+      renderjson(data)
+    );
+    // https://cdn.rawgit.com/caldwell/renderjson/master/renderjson.js
+    console.log(renderjson({ hello: [1, 2, 3, 4], there: { a: 1, b: 2, c: ["hello", null] } }));
+  </script>
+</body>
+
+</html>
