@@ -1,0 +1,179 @@
+@media(min-width:375px) {
+    html {
+        font-size: 40%;
+    }
+
+    .cointner {
+        width: 320px;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .col-33 {
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .col-20 {
+        width: 49%;
+        margin: 1rem 0;
+    }
+    .col-16{
+        width: 50%;
+    }
+    .col-20f{
+        width: 100%;
+    }
+
+}
+
+@media(min-width:576px) {
+    html {
+        font-size: 45%;
+    }
+
+    .cointner {
+        width: 520px;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .col-33 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .col-20 {
+        width: 49%;
+        margin: 1rem 0;
+    }
+}
+
+@media(min-width:768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .cointner {
+        width: 720px;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .col-33 {
+        width: 30%;
+    }
+
+    .col-20 {
+        width: 20%;
+        margin: 1rem 0;
+    }
+
+    .left {
+        text-align: left;
+    }
+   
+    .card-sec{
+        width: 50%;
+        overflow: hidden;
+    }
+    .col-16{
+        width: 30%;
+    }
+    .col-20f{
+        width: 30%;
+    }
+}
+
+@media(min-width:992px) {
+    html {
+        font-size: 40%;
+    }
+
+    .cointner {
+        width: 920px;
+    }
+
+    .col-50 {
+        width: 50%;
+    }
+
+    .col-33 {
+        width: 30%;
+    }
+
+    .card-sec {
+        width: 30%;
+    }
+    
+
+}
+
+@media(min-width:1200px) {
+    html {
+        font-size: 50%;
+    }
+
+    .cointner {
+        width: 1120px;
+    }
+
+    .col-50 {
+        width: 50%;
+    }
+
+    .col-33 {
+        width: 30%;
+    }
+
+    .card-sec {
+        width: 30%;
+    }
+    .col-16{
+        width: 14%;
+    }
+    .col-20f{
+        width: 30%;
+    }
+}
+
+@media(min-width:1400px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .cointner {
+        width: 1320px;
+    }
+
+    .col-50 {
+        width: 50%;
+    }
+
+    .col-33 {
+        width: 30%;
+    }
+
+    .card-sec {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
