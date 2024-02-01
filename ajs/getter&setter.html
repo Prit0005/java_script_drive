@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let obj = {
+            fname: "pritesh",
+            lname: "senjaliya",
+            // fullname:function()
+            // {
+            //     return(`${obj.fname} ${obj.lname}`)
+            // }
+            get FullName() {
+                return (`${obj.fname} ${obj.lname}`)
+            },
+            set setFullName(param) {
+                this.fname = param.fn;
+                this.lname = param.ln;
+            }
+        }
+        obj.setFullName = { fn: "abc", ln: "xyz" }
+        document.write(obj.FullName)
+    </script>
+</body>
+
+</html>
