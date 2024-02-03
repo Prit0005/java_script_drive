@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class human {
+            fname = "pritesh"
+            lname = "patel"
+            weight = 50
+            height = 6
+            bmi=0
+
+            cal=()=>{
+                bmi=weight/(height*height)
+                document.write(bmi)
+            }
+        }
+        let pritesh = new human()
+        // document.write(pritesh.fname)
+       pritesh.cal()
+    </script>
+</body>
+
+</html>
