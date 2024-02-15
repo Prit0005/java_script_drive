@@ -64,6 +64,21 @@ a {
     cursor: pointer;
     background: #703BF7;
 }
+nav.scrolled {
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Adds a slight shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Ensure text and other elements within the navbar are styled appropriately for the new background */
+nav.scrolled .nav-link a,
+nav.scrolled .nav-item a {
+    color: #fff; /* Change text color for better visibility on the new background */
+}
 
 nav {
     background: #1A1A1A;
