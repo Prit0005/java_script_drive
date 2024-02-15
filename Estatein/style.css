@@ -69,22 +69,34 @@ nav {
     background: #1A1A1A;
     padding: 2rem 0;
 
-    .link ul li {
+    .nav-menu  li {
         display: inline-block;
     }
 
     a {
         font-size: 2rem;
+        position: relative;
         margin: 0 0 0 1rem;
     }
-
-    a:hover,
-    button:hover {
-        border: 1px solid #262626;
-        padding: 1rem 2rem;
-        border-radius: 2rem;
-        background: #141414;
-    }
+    a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #ffffff;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+      }
+      
+      a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+      }
+      
 
 }
 
@@ -153,14 +165,22 @@ nav {
         padding: 3rem 4rem;
         border: 1px solid #262626;
         background: #1A1A1A;
-
-        &:hover>img {
-            transform: scale(1.2);
-            transition: all 0.5s ease-in-out;
-        }
+          
+    }
+    .add-card img {
+        animation: rotateImage 10s infinite linear;
     }
 }
 
+
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 .sec-2,
 .sec-3,
 .sec-4,
@@ -409,4 +429,21 @@ footer {
     input:hover {
         outline: none;
     }
+}
+
+
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    background: hsl(0, 0%, 100%);
 }
